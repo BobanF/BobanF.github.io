@@ -4,49 +4,54 @@
     <meta charset="UTF-8">
     <title>Willkommen</title>
     <style>
-        <style>
-    body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-    }
-    body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        background-image: url('deskphoto.jpg');
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        color: #ffffff; /* Ili neka druga boja koja pruža visok kontrast */
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* Povećani kontrast */
-    }
-    main {
-        background-color: rgba(0, 0, 0, 0.5); /* Poluprozirna pozadina za tekst */
-        color: white; /* Boja teksta */
-        width: 80%;
-        max-width: 800px;
-        margin: 25px;
-        overflow-y: auto;
-        padding: 20px;
-        border-radius: 15px; /* Zaobljeni rubovi */
-    }
-    h1 {
-        font-size: 2.5em; /* Povećana veličina za naslove */
-    }
-    p {
-        font-size: 1.2em; /* Povećana veličina teksta za paragrafe */
-    }
-    nav ul li a {
-        font-size: 30px; /* Prilagođena veličina fonta za navigacijske linkove */
-        padding: 15px;
-        border-radius: 10px;
-        transition: background-color 0.3s, color 0.3s;
-    }
-
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('deskphoto.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        }
+        main {
+            width: 80%;
+            max-width: 800px;
+            margin: 25px;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        nav {
+            width: 100%;
+            margin-top: auto; /* Gura navigaciju na dno */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 20px 0; /* Dodaje veći razmak na vrhu i dnu navigacije */
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Dodaje poluprozirnu pozadinu za bolju vidljivost */
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 30px; /* Povećava veličinu fonta za bolju čitljivost */
+            padding: 15px;
+            border-radius: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
         nav ul li a:hover {
             background-color: rgba(255,255,255,0.2);
         }
@@ -70,7 +75,7 @@
         <p>Ich bin Boban, ein Zahlenliebhaber, Trendforscher und ein echter Datenenthusiast. Mein Abenteuer in der Welt der Daten begann nach einigen Jahren der Erkundung verschiedener Karrierewege, von der Logistik bis zur Finanzwelt, wo ich erkannte, dass mich das Knacken komplexer Datenrätsel wirklich begeistert.
         Vor kurzem habe ich eine Weiterbildung zum Datenanalysten absolviert, wo ich tief in die Welt von Python, Tableau, MySQL und Excel eingetaucht bin. Ich werde nicht lügen, es war spaßig (und manchmal frustrierend) zu lernen, wie man Sinn aus einem Berg von Daten zieht und das in etwas verwandelt, das auch Sterbliche verstehen können.
         Vielleicht klingt es so, als würde ich viel Zeit damit verbringen, auf Bildschirme zu starren (was wahr ist), aber die Arbeit am Projekt "Ära der Elektroautos" war eine echte Erfrischung. Zu erforschen, wie die Zukunft der Elektromobilität durch Daten geformt wird, war tatsächlich ziemlich cool.
-        Auf dieser Seite möchte ich ein wenig darüber teilen, was ich gelernt habe, an welchen Projekten ich gearbeitet habe und was mich interessiert. Wenn du hier bist, um mehr über mich, meine Datenabenteuer oder einfach nur auf der Suche nach Inspiration zu erfahren, hoffe ich, dass du Spaß haben wirst!
+        Auf dieser Seite möchte ich ein wenig darüber teilen, was ich gelernt habe, an welchen Projekten ich gearbeitet habe und was mich interessiert. Wenn du hier bist, um mehr über mich, meine Datenabenteuer oder einfach nur auf der Suche nach Inspiration bist, hoffe ich, dass du Spaß haben wirst!
         Danke für deinen Besuch und fühle dich frei, dich zu melden, wenn du über Daten, Technologie oder irgendetwas Interessantes sprechen möchtest. </p>
     </main>
     <nav>
