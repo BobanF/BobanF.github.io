@@ -4,48 +4,58 @@
     <meta charset="UTF-8">
     <title>Dobrodošli na moju web stranicu</title>
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center; /* Centriranje sadržaja */
-            background-image: url('deskphoto.jpg'); /* Postavljanje slike pozadine */
-            background-size: cover; /* Slika pokriva cijeli zaslon */
-            background-position: center; /* Centriranje slike */
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* Centriranje sadržaja po vertikali */
-            min-height: 100vh;
-            color: white; /* Promjena boje teksta za bolju vidljivost na tamnoj pozadini */
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.7); /* Dodavanje sjene tekstu */
-        }
-        main {
-            flex-grow: 1;
-            padding: 20px; /* Dodavanje prostora oko sadržaja */
-        }
-        nav ul {
-            list-style-type: none; /* Uklanjanje točkica */
-            padding: 0;
-            text-align: center; /* Osiguravanje da su linkovi centrirani */
-        }
-        nav ul li {
-            display: inline; /* Stavljanje linkova u isti red */
-            margin: 0 10px;
-        }
-        nav ul li a {
-            text-decoration: none; /* Uklanjanje podcrtavanja linkova */
-            color: white; /* Boja teksta linkova za bolju vidljivost */
-            font-size: 18px; /* Povećanje veličine fonta */
-            padding: 5px; /* Dodavanje prostora oko linkova */
-            border-radius: 5px; /* Zaobljeni rubovi */
-            transition: background-color 0.3s, color 0.3s; /* Animacija promjene boje */
-        }
-        nav ul li a:hover {
-            background-color: rgba(255,255,255,0.2); /* Promjena boje pozadine i teksta na hover */
-        }
+       body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('deskphoto.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Osigurava centriranje sadržaja po horizontali */
+    min-height: 100vh;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+main {
+    width: 80%; /* Prilagodite širinu prema potrebi */
+    max-width: 800px; /* Maksimalna širina kako tekst ne bi bio predugačak po liniji */
+    margin: 20px;
+    overflow-y: auto; /* Omogućava skrolanje ako je sadržaj predugačak */
+    padding: 20px; /* Dodaje prostor unutar main sekcije */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
         @media (max-width: 768px) {
             body {
                 text-align: left;
