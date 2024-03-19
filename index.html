@@ -19,14 +19,17 @@
             flex-direction: column;
             justify-content: center; /* Centriranje sadržaja po vertikali */
             min-height: 100vh;
+            color: white; /* Promjena boje teksta za bolju vidljivost na tamnoj pozadini */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7); /* Dodavanje sjene tekstu */
         }
         main {
             flex-grow: 1;
-            color: white; /* Promjena boje teksta za bolju vidljivost na tamnoj pozadini */
+            padding: 20px; /* Dodavanje prostora oko sadržaja */
         }
         nav ul {
             list-style-type: none; /* Uklanjanje točkica */
             padding: 0;
+            text-align: center; /* Osiguravanje da su linkovi centrirani */
         }
         nav ul li {
             display: inline; /* Stavljanje linkova u isti red */
@@ -35,6 +38,25 @@
         nav ul li a {
             text-decoration: none; /* Uklanjanje podcrtavanja linkova */
             color: white; /* Boja teksta linkova za bolju vidljivost */
+            font-size: 18px; /* Povećanje veličine fonta */
+            padding: 5px; /* Dodavanje prostora oko linkova */
+            border-radius: 5px; /* Zaobljeni rubovi */
+            transition: background-color 0.3s, color 0.3s; /* Animacija promjene boje */
+        }
+        nav ul li a:hover {
+            background-color: rgba(255,255,255,0.2); /* Promjena boje pozadine i teksta na hover */
+        }
+        @media (max-width: 768px) {
+            body {
+                text-align: left;
+            }
+            nav ul {
+                text-align: center;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
@@ -42,14 +64,10 @@
     <main>
         <h1>Hey, willkommen!</h1>
         <p>Ich bin Boban, ein Zahlenliebhaber, Trendforscher und ein echter Datenenthusiast. Mein Abenteuer in der Welt der Daten begann nach einigen Jahren der Erkundung verschiedener Karrierewege, von der Logistik bis zur Finanzwelt, wo ich erkannte, dass mich das Knacken komplexer Datenrätsel wirklich begeistert.
-
-Vor kurzem habe ich eine Weiterbildung zum Datenanalysten absolviert, wo ich tief in die Welt von Python, Tableau, MySQL und Excel eingetaucht bin. Ich werde nicht lügen, es war spaßig (und manchmal frustrierend) zu lernen, wie man Sinn aus einem Berg von Daten zieht und das in etwas verwandelt, das auch Sterbliche verstehen können.
-
-Vielleicht klingt es so, als würde ich viel Zeit damit verbringen, auf Bildschirme zu starren (was wahr ist), aber die Arbeit am Projekt "Ära der Elektroautos" war eine echte Erfrischung. Zu erforschen, wie die Zukunft der Elektromobilität durch Daten geformt wird, war tatsächlich ziemlich cool.
-
-Auf dieser Seite möchte ich ein wenig darüber teilen, was ich gelernt habe, an welchen Projekten ich gearbeitet habe und was mich interessiert. Wenn du hier bist, um mehr über mich, meine Datenabenteuer oder einfach nur auf der Suche nach Inspiration zu erfahren, hoffe ich, dass du Spaß haben wirst!
-
-Danke für deinen Besuch und fühle dich frei, dich zu melden, wenn du über Daten, Technologie oder irgendetwas Interessantes sprechen möchtest.</p>
+        Vor kurzem habe ich eine Weiterbildung zum Datenanalysten absolviert, wo ich tief in die Welt von Python, Tableau, MySQL und Excel eingetaucht bin. Ich werde nicht lügen, es war spaßig (und manchmal frustrierend) zu lernen, wie man Sinn aus einem Berg von Daten zieht und das in etwas verwandelt, das auch Sterbliche verstehen können.
+        Vielleicht klingt es so, als würde ich viel Zeit damit verbringen, auf Bildschirme zu starren (was wahr ist), aber die Arbeit am Projekt "Ära der Elektroautos" war eine echte Erfrischung. Zu erforschen, wie die Zukunft der Elektromobilität durch Daten geformt wird, war tatsächlich ziemlich cool.
+        Auf dieser Seite möchte ich ein wenig darüber teilen, was ich gelernt habe, an welchen Projekten ich gearbeitet habe und was mich interessiert. Wenn du hier bist, um mehr über mich, meine Datenabenteuer oder einfach nur auf der Suche nach Inspiration zu erfahren, hoffe ich, dass du Spaß haben wirst!
+        Danke für deinen Besuch und fühle dich frei, dich zu melden, wenn du über Daten, Technologie oder irgendetwas Interessantes sprechen möchtest. </p>
     </main>
     <nav>
         <ul>
