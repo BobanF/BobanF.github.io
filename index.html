@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <title>Dobrodošli na moju web stranicu</title>
     <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
         body {
             font-family: Arial, sans-serif;
             text-align: center; /* Centriranje sadržaja */
-            margin: 20px;
+            background-image: url('ev_kolaz.jpg'); /* Postavljanje slike pozadine */
+            background-size: cover; /* Slika pokriva cijeli zaslon */
+            background-position: center; /* Centriranje slike */
             display: flex;
             flex-direction: column;
+            justify-content: center; /* Centriranje sadržaja po vertikali */
             min-height: 100vh;
         }
         main {
             flex-grow: 1;
+            color: white; /* Promjena boje teksta za bolju vidljivost na tamnoj pozadini */
         }
         nav ul {
             list-style-type: none; /* Uklanjanje točkica */
@@ -25,23 +34,18 @@
         }
         nav ul li a {
             text-decoration: none; /* Uklanjanje podcrtavanja linkova */
-            color: #000; /* Boja teksta linkova */
-        }
-        img {
-            max-width: 100%; /* Maksimalna širina slike je 100% njenog roditeljskog elementa */
-            height: auto; /* Visina slike automatski se prilagođava kako bi se očuvali proporcije */
+            color: white; /* Boja teksta linkova za bolju vidljivost */
         }
     </style>
 </head>
 <body>
     <main>
-        <img src="ev_kolaz.jpg" alt="Dobrodošli!" width="400"> <!-- Širina je inicijalno postavljena, ali max-width u CSS-u osigurava responsivnost -->
         <h1>Dobrodošli na moju web stranicu</h1>
         <p>Ovo je mjesto gdje možete saznati više o meni i mojim projektima.</p>
     </main>
     <nav>
         <ul>
-            <li><a href="Lebenslauf_Boban Frankovic.pdf">Životopis</a></li>
+            <li><a href="Lebenslauf_Boban Frankovic.pdf">Lebenslauf</a></li>
             <li><a href="projekt.html">Projekt</a></li>
             <li><a href="https://www.linkedin.com/in/boban-frankovic-95b769101">
                 <img src="LinkedIn_icon.jpg" alt="LinkedIn" style="width: 40px; height: 40px;"></a></li>
